@@ -90,7 +90,7 @@ function init(){
           var dr=node.selectAll('path').data(d0);
           dr.enter().append("path");
           if(trans){
-            dr=dr.transition().delay(trans.delay()).duration(trans.duration());
+            dr=dr.transition().delay( function(d, i) { return i * 1.2; }).duration(trans.duration());
           }
           dr.attr("d",function(d){return d.path;});
           if(colorFunction){
@@ -161,36 +161,28 @@ function init(){
     })();
     var surfaces=[
         {
-          name: 'Dataset 1',
           data: dataFromFormular(function(x,y){
               return Math.cos(Math.sqrt(x*x+y*y)/5*Math.PI)*50;
             })
         },
         {
-          name: 'Dataset 2',
           data: dataFromFormular(function(x,y){
               return Math.cos(x/15*Math.PI)*Math.cos(y/15*Math.PI)*60+Math.cos(x/8*Math.PI)*Math.cos(y/10*Math.PI)*40;
             })
         },
         {
-          name: 'Dataset 3',
           data: dataFromFormular(function(x,y){
               return -(Math.cos(Math.sqrt(x*x+y*y)/6*Math.PI)+1)*150/(Math.pow(x*x+y*y+1,0.3)+1)+50;
             })
         },
         {
-          name: 'Dataset 2',
           data: dataFromFormular(function(x,y){
               return (Math.cos(2*x*Math.PI)*Math.cos(x/15*Math.PI)*Math.cos(y/15*Math.PI)*60+Math.cos(x/8*Math.PI)*Math.cos(y/10*Math.PI)*40);
             })
         },
       ];
-    var selected=surfaces[1];
-    var graph = gid("intro-graph");
-    var svg=d3.select("#intro-graph")
-          .append('svg')
-            .attr('height',height)
-            .attr('width',width);
+    var selected=surfaces[0];
+    var svg=d3.select("#intro-graph>svg")
     var group = svg.append("g");
     var ul=d3.select('#intro-graph')
            .append('ul');
@@ -207,7 +199,7 @@ function init(){
     var curIdx = 0;
     setInterval(function(){
         md.data([surfaces[curIdx].data]).surface3D(width,height)
-        .transition().duration(500)
+        .transition().duration(1000)
           .surfaceHeight(function(d){ 
             return d;
           }).surfaceColor(function(d){
