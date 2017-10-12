@@ -8,6 +8,10 @@
   </url>
   
   <url>
+    <loc>http://example.org/contact/</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/</loc>
   </url>
   
