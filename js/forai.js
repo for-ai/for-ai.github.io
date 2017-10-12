@@ -134,7 +134,7 @@
 
 
 window.onload = init
-var yaw=0.5,pitch=1, WIDTH=700, HEIGHT=400, drag=false;
+var yaw=0.5,pitch=1, WIDTH=900, HEIGHT=600, drag=false;
 
 
 function gid(id){
