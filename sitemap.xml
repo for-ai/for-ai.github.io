@@ -3,7 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://example.org/team/aidan/</loc>
+    <lastmod>2017-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/team/bryan/</loc>
+    <lastmod>2017-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/team/ivan/</loc>
+    <lastmod>2017-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/team/osama/</loc>
+    <lastmod>2017-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/team/sheldon/</loc>
+    <lastmod>2017-10-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -17,6 +38,7 @@
   
   <url>
     <loc>http://example.org/</loc>
+    <lastmod>2017-10-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -26,6 +48,7 @@
   
   <url>
     <loc>http://example.org/team/</loc>
+    <lastmod>2017-10-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
