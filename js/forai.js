@@ -152,9 +152,20 @@ function dataFromFormular(func){
     }
     return output;
 }
-
+  
 function init(){
     var surfaces=[
+        {
+          // [(sin(10(x^2+y^2))+sin(10((x-0.2)^2+(y+0.1)^2)))/10]
+          data: dataFromFormular(function(x,y){
+            return (Math.sin(10*Math.sqrt(x*x*0.001+y*y*0.001)) + Math.sin(10*Math.sqrt((0.001*x-0.2)*(0.001*x-0.2)+(0.001*y+0.1)*(0.001*y+0.1))))*50
+          })
+        },
+        {
+          data: dataFromFormular(function(x,y){
+              return Math.cos(Math.sqrt(x*x+y*y)/5*Math.PI)+Math.cos(x/8*Math.PI)*Math.cos(y/10*Math.PI)*40;
+          })
+        },
         {
           data: dataFromFormular(function(x,y){
               return Math.cos(Math.sqrt(x*x+y*y)/5*Math.PI)*50;
@@ -201,7 +212,7 @@ function renderGraphData(data, idx){
         .surfaceHeight(function(d){ 
           return d;
         }).surfaceColor(function(d){
-          var c=d3.hsl((d+200+idx*50), 0.8, 0.6).rgb()
+          var c=d3.hsl((d+200+idx*30), 0.8, 0.6).rgb()
           return "rgb("+parseInt(c.r)+","+parseInt(c.g)+","+parseInt(c.b)+")";
         });
 }
