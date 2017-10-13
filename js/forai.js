@@ -202,7 +202,7 @@ function init(){
         if(curIdx >= surfaces.length){
             curIdx = 0;
         }
-    }, 3000)
+    }, 5000)
 } 
 
 function renderGraphData(data, idx){
