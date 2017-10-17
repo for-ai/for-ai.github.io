@@ -1,4 +1,4 @@
-(function(){
+  (function(){
   var Surface=function(node){
     var heightFunction,colorFunction,timer,timer,transformPrecalc=[];
     var displayWidth=300, displayHeight=300, zoom=1;
