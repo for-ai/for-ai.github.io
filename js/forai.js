@@ -195,7 +195,7 @@ function init(){
     
     renderGraphData(surfaces[0].data, 0)
     var curIdx = 1;
-    setInterval(function(){
+    var renderInterval = setInterval(function(){
         renderGraphData(surfaces[curIdx].data, curIdx)
 
         curIdx++;
@@ -203,6 +203,15 @@ function init(){
             curIdx = 0;
         }
     }, 5000)
+
+    window.onblur = function() {
+      renderInterval.pause()
+    }
+
+    window.onfocus = function() {
+      renderInterval.resume()
+    }
+
 } 
 
 function renderGraphData(data, idx){
