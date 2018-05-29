@@ -21,12 +21,30 @@
     </item>
     
     <item>
+      <title>Akhmed Rakhmati</title>
+      <link>http://example.org/team/akhmed/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/team/akhmed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bryan Li</title>
       <link>http://example.org/team/bryan/</link>
       <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/team/bryan/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Divyam Madaan</title>
+      <link>http://example.org/team/divyam/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/team/divyam/</guid>
+      <description>`</description>
     </item>
     
     <item>
@@ -54,6 +72,15 @@
       
       <guid>http://example.org/team/sheldon/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Siddhartha Rao Kamalakara</title>
+      <link>http://example.org/team/siddhartha/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/team/siddhartha/</guid>
+      <description>`</description>
     </item>
     
     <item>
