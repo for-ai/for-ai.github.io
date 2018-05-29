@@ -38,6 +38,11 @@
   </url>
   
   <url>
+    <loc>http://example.org/publications/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://example.org/tags/</loc>
     <priority>0</priority>
   </url>
@@ -46,6 +51,10 @@
     <loc>http://example.org/team/</loc>
     <lastmod>2017-10-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/publications/ciphergan/</loc>
   </url>
   
 </urlset>
