@@ -1,101 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="theme-color" content="#5F5F5D">
-        <meta name="msapplication-navbutton-color" content="#5F5F5D">
-        <meta name="apple-mobile-web-app-status-bar-style" content="#5F5F5D">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <meta property="og:url" content="http://for.ai"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="FOR.ai | AI Research Group"/>
-<meta property="og:description" content="Toronto-based AI Research Team."/>
-<meta property="og:image" content="http://for.ai/img/team.jpeg"/>
-        <script>
-            
-            !function(e){"use strict"
-            var n=function(n,t,o){function i(e){return f.body?e():void setTimeout(function(){i(e)})}var d,r,a,l,f=e.document,s=f.createElement("link"),u=o||"all"
-            return t?d=t:(r=(f.body||f.getElementsByTagName("head")[0]).childNodes,d=r[r.length-1]),a=f.styleSheets,s.rel="stylesheet",s.href=n,s.media="only x",i(function(){d.parentNode.insertBefore(s,t?d:d.nextSibling)}),l=function(e){for(var n=s.href,t=a.length;t--;)if(a[t].href===n)return e()
-            setTimeout(function(){l(e)})},s.addEventListener&&s.addEventListener("load",function(){this.media=u}),s.onloadcssdefined=l,l(function(){s.media!==u&&(s.media=u)}),s}
-            "undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this)
-        </script>
-        <style>
-             
-            #page{
-              display: none; 
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="theme-color" content="#5F5F5D">
+    <meta name="msapplication-navbutton-color" content="#5F5F5D">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5F5F5D">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:url" content="http://for.ai" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FOR.ai | AI Research Group" />
+    <meta property="og:description" content="Toronto-based AI Research Team." />
+    <meta property="og:image" content="http://for.ai/img/team.jpeg" />
+    <script>
+
+        !function (e) {
+            "use strict"
+            var n = function (n, t, o) {
+                function i(e) { return f.body ? e() : void setTimeout(function () { i(e) }) } var d, r, a, l, f = e.document, s = f.createElement("link"), u = o || "all"
+                return t ? d = t : (r = (f.body || f.getElementsByTagName("head")[0]).childNodes, d = r[r.length - 1]), a = f.styleSheets, s.rel = "stylesheet", s.href = n, s.media = "only x", i(function () { d.parentNode.insertBefore(s, t ? d : d.nextSibling) }), l = function (e) {
+                    for (var n = s.href, t = a.length; t--;)if (a[t].href === n) return e()
+                    setTimeout(function () { l(e) })
+                }, s.addEventListener && s.addEventListener("load", function () { this.media = u }), s.onloadcssdefined = l, l(function () { s.media !== u && (s.media = u) }), s
             }
-        </style>
-        <script>
-            loadCSS("/css/style.css");
-        </script>
-        <title> Hello World &amp;&amp; AI Grant </title>
-    </head>
-    <body>
-        <nav class="navbar navbar-default navbar-fixed-top" id="header">
-  <div class="navbar-header">
-      <a class="navbar-brand navbar-left" id="logo" href="/"></a>
-      <button id="mmenu-button"  aria-controls="navbar" aria-expanded="false">
-      </button>
-  </div>
-    <div id="navbar">
-    <ul id="options">
-        
-        <div class="clear"></div>
-    </ul>
-  </div>
-  <div id="mmenu">
-    <button id="mmenu-closer"  aria-controls="navbar" aria-expanded="false">
-    </button>
-    <ul id="moptions">
-        
-    </ul>
-  </div>
-</nav>
-        <div id="page">
-        <div id="intro-sect-container">
-        <div id="intro-sect" class="container-block">
-            <div id="intro-graph">
-                <svg><g></g></svg>
-            </div>
-            <div class="clear"></div>
+            "undefined" != typeof exports ? exports.loadCSS = n : e.loadCSS = n
+        }("undefined" != typeof global ? global : this)
+    </script>
+    <style>
+        #page {
+            display: none;
+        }
+    </style>
+    <script>
+        loadCSS("/css/style.css");
+    </script>
+    <title> Hello World &amp;&amp; AI Grant </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="header">
+        <div class="navbar-header">
+            <a class="navbar-brand navbar-left" id="logo" href="/"></a>
+            <button id="mmenu-button" aria-controls="navbar" aria-expanded="false">
+            </button>
         </div>
-        </div>       
-        
+        <div id="navbar">
+            <ul id="options">
 
-<div id="blog-content-sect" class="container-block">
-    ##Hello World!</p>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div id="mmenu">
+            <button id="mmenu-closer" aria-controls="navbar" aria-expanded="false">
+            </button>
+            <ul id="moptions">
 
-<p>For our first blog post we&rsquo;re proud to announce that our group was chosen to receive the <a href="https://aigrant.org/" rel="nofollow">Fall 2017 AI grant</a> for our CipherGAN project. The grant consists of
-</div>
-        </div> 
-        <script src="http://d3js.org/d3.v3.min.js"></script>
-        <script src="/js/forai.js"></script>
-        
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108771071-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            </ul>
+        </div>
+    </nav>
+    <div id="page">
+        <div id="intro-sect-container">
+            <div id="intro-sect" class="container-block">
+                <div id="intro-graph">
+                    <svg>
+                        <g></g>
+                    </svg>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
 
- gtag('config', 'UA-108771071-1');
-</script>
-    </body>
+
+        <div id="blog-content-sect" class="container-block">
+            ##Hello World!</p>
+
+            <p>For our first blog post we&rsquo;re proud to announce that our group was chosen to receive the
+                <a href="https://aigrant.org/"
+                    rel="nofollow">Fall 2017 AI grant</a> for our CipherGAN project. The grant consists of
+        </div>
+    </div>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="/js/forai.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108771071-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108771071-1');
+    </script>
+</body>
+
 </html>
